@@ -21,6 +21,6 @@ if __name__ == "__main__":
     file_paths = ["https://objectstorageapi.bja.sealos.run/czrn86r1-yyh/english_test.pdf", "https://objectstorageapi.bja.sealos.run/czrn86r1-yyh/chinese_test.pdf",
                  "https://objectstorageapi.bja.sealos.run/czrn86r1-yyh/ocr_test.pdf","https://objectstorageapi.bja.sealos.run/czrn86r1-yyh/english_file/3649329.3658477.pdf"]
     for file_path in file_paths:
-        p = Process(target=request_, args=(file_path))
+        p = Process(target=request_, args=(file_path,))
         p.start()
 
